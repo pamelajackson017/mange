@@ -6,3 +6,4 @@ dj-database-url
 whitenoise
 gunicorn
 twine
+requests
