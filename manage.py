@@ -1,11 +1,7 @@
-from django.shortcuts import redirect
-from django.core.exceptions import MiddlewareNotUsed
-from django.conf import settings
+from flask import Flask
 
+app = Flask(__name__)
 
-class CanonicalDomainMiddleware(object):
-
-   @app.route('/')
-def redirect_to_link():
-    # return redirect method, NOTE: replace google.com with the link u want
-    return redirect('https://google.com')
+@app.route("/")
+def index():
+return redirect("http://www.example.com", code=302)
