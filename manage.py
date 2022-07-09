@@ -15,5 +15,4 @@ class CanonicalDomainMiddleware(object):
     def __call__(self, request):
      
                 canonical_url = "https://stackoverflow.com/questions/14343812/redirecting-to-url-in-flask"
-            canonical_url += settings.SITE_DOMAIN + request.get_full_path()
             return redirect(canonical_url, permanent=True)
