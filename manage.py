@@ -8,4 +8,3 @@ return redirect("https://www.qovery.com/", permanent=True)
  
 
 
-    execute_from_command_line(sys.argv)
